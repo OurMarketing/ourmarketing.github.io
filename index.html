@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#EDE9FF">
+  <meta name="theme-color" content="#F4F7F3">
   <meta name="color-scheme" content="light">
 
   <title>Our Marketing</title>
@@ -48,12 +48,22 @@
           "Google Ads",
           "Conversion Optimization"
         ],
-        "contactPoint":{
-          "@type":"ContactPoint",
-          "telephone":"+86-512-57828333",
-          "email":"support@our.marketing",
-          "contactType":"sales and customer service"
-        }
+        "contactPoint":[
+          {
+            "@type":"ContactPoint",
+            "telephone":"+86-512-57828333",
+            "email":"support@our.marketing",
+            "contactType":"sales and customer service"
+          },
+          {
+            "@type":"ContactPoint",
+            "telephone":"+86-17721028008",
+            "contactType":"WhatsApp"
+          }
+        ],
+        "sameAs":[
+          "https://wa.me/8617721028008"
+        ]
       },
       {
         "@type":"WebSite",
@@ -136,18 +146,18 @@
 
   <style>
     :root{
-      --lav:#EDE9FF;
-      --lav-2:#DCD4FF;
-      --cream:#F8F5EF;
-      --ink:#151515;
-      --petrol:#123D3B;
-      --petrol-2:#0A2E2D;
-      --coral:#FF6B4A;
-      --acid:#D6FF5C;
-      --plum:#6B4BEF;
-      --line:rgba(21,21,21,.15);
-      --line-light:rgba(255,255,255,.24);
-      --muted:#66616B;
+      --lav:#F4F7F3;
+      --lav-2:#E6ECE6;
+      --cream:#FAF9F5;
+      --ink:#24312B;
+      --petrol:#3E6154;
+      --petrol-2:#2E4B40;
+      --coral:#7E957B;
+      --acid:#E7EEE4;
+      --plum:#748982;
+      --line:rgba(36,49,43,.115);
+      --line-light:rgba(255,255,255,.22);
+      --muted:#66736C;
       --max:1340px;
     }
 
@@ -155,7 +165,7 @@
     html{scroll-behavior:smooth}
     body{
       margin:0;
-      background:var(--lav);
+      background:#F2F6F2;
       color:var(--ink);
       font-family:Inter,Arial,"Helvetica Neue","PingFang SC","Microsoft YaHei",sans-serif;
       -webkit-font-smoothing:antialiased;
@@ -164,7 +174,7 @@
     }
 
     a{color:inherit;text-decoration:none}
-    ::selection{background:var(--acid);color:var(--petrol)}
+    ::selection{background:#EDF2ED;color:var(--petrol)}
     .wrap{width:min(calc(100% - 56px),var(--max));margin:auto}
 
     /* top nav */
@@ -184,11 +194,11 @@
       display:flex;
       align-items:center;
       gap:24px;
-      border:1px solid rgba(18,61,59,.14);
+      border:1px solid rgba(62,97,84,.13);
       border-radius:18px;
-      background:rgba(248,245,239,.86);
+      background:rgba(250,250,247,.94);
       backdrop-filter:blur(18px);
-      box-shadow:0 14px 40px rgba(50,35,70,.08);
+      box-shadow:0 12px 28px rgba(42,61,52,.05);
     }
 
     .brand{
@@ -204,7 +214,7 @@
       gap:28px;
       align-items:center;
       font-size:12px;
-      color:#4F4B53;
+      color:#53625A;
     }
 
     .menu a:hover{color:var(--plum)}
@@ -216,7 +226,7 @@
       align-items:center;
       justify-content:center;
       border-radius:999px;
-      background:var(--petrol);
+      background:#244B53;
       color:#fff;
       font-size:11px;
       font-weight:750;
@@ -240,8 +250,8 @@
       right:-260px;
       top:90px;
       border-radius:50%;
-      background:var(--acid);
-      opacity:.72;
+      background:#DFE9DF;
+      opacity:.76;
     }
 
     .hero::after{
@@ -252,7 +262,7 @@
       right:180px;
       top:220px;
       border-radius:50%;
-      border:1px solid rgba(18,61,59,.18);
+      border:1px solid rgba(62,97,84,.13);
     }
 
     .hero-grid{
@@ -277,7 +287,7 @@
       font-size:9px;
       letter-spacing:.16em;
       text-transform:uppercase;
-      color:#686370;
+      color:#66736B;
       writing-mode:vertical-rl;
       transform:rotate(180deg);
     }
@@ -298,7 +308,7 @@
       font-size:10px;
       letter-spacing:.16em;
       text-transform:uppercase;
-      color:#625D68;
+      color:#5F6C64;
       margin-bottom:26px;
     }
 
@@ -334,16 +344,16 @@
 
     .hero-subline em{
       font-style:normal;
-      color:var(--coral);
+      color:#6F8A6A;
     }
 
     .hero-aside{
       align-self:end;
-      background:var(--petrol);
+      background:#3E6154;
       color:#fff;
       padding:28px;
       border-radius:28px 28px 6px 28px;
-      box-shadow:0 24px 60px rgba(18,61,59,.16);
+      box-shadow:0 20px 48px rgba(51,78,66,.11);
     }
 
     .hero-aside small{
@@ -351,12 +361,12 @@
       font-size:9px;
       letter-spacing:.14em;
       text-transform:uppercase;
-      color:#A7C4C0;
+      color:#D1DED7;
     }
 
     .hero-aside p{
       margin:18px 0 0;
-      color:#DDE9E7;
+      color:#F2F6F3;
       font-size:14px;
       line-height:1.75;
     }
@@ -375,12 +385,12 @@
       border:1px solid rgba(255,255,255,.2);
       border-radius:999px;
       font-size:9px;
-      color:#D7E3E1;
+      color:#E8EFEA;
     }
 
     /* intro split */
     .intro{
-      background:var(--cream);
+      background:#FAF9F5;
       padding:118px 0;
     }
 
@@ -394,7 +404,7 @@
       font-size:10px;
       letter-spacing:.14em;
       text-transform:uppercase;
-      color:#6B6670;
+      color:#66746B;
       font-weight:700;
       padding-top:7px;
     }
@@ -409,28 +419,71 @@
     }
 
     .intro h2 span{
-      color:var(--plum);
+      color:#587361;
     }
 
     .intro p{
       margin:28px 0 0;
       max-width:760px;
-      color:#5C5860;
+      color:#5D6A63;
       font-size:15px;
       line-height:1.82;
     }
 
     /* services as full screen chapters */
     .service-chapter{
-      border-top:1px solid rgba(255,255,255,.12);
+      border-top:1px solid rgba(24,52,59,.10);
       color:#fff;
       position:relative;
       overflow:hidden;
     }
 
-    .service-chapter.geo{background:var(--petrol)}
-    .service-chapter.seo{background:var(--plum)}
-    .service-chapter.sem{background:#281E49}
+
+    .service-chapter.geo,
+    .service-chapter.seo,
+    .service-chapter.sem{
+      color:#25332D;
+    }
+
+    .service-chapter .service-index{
+      color:#728078;
+      border-right-color:rgba(37,51,45,.13);
+    }
+
+    .service-chapter .service-copy h3{
+      color:#25332D;
+    }
+
+    .service-chapter .service-copy p{
+      color:#55645C;
+    }
+
+    .service-chapter .service-points{
+      border-top-color:rgba(37,51,45,.13);
+    }
+
+    .service-chapter .service-points span{
+      color:#617068;
+    }
+
+    .service-chapter.geo{background:#E6EFE8;color:#25332D}
+    .service-chapter.seo{background:#E7EFED;color:#25332D}
+    .service-chapter.sem{background:#EBF0E8;color:#25332D}
+
+
+    .service-chapter + .service-chapter{
+      border-top:1px solid rgba(37,51,45,.10);
+    }
+
+    .service-chapter .service-copy h3{
+      font-weight:760;
+    }
+
+    .service-chapter.sem .service-index,
+    .service-chapter.sem .service-copy p,
+    .service-chapter.sem .service-points span{
+      color:#5D6D63;
+    }
 
     .service-inner{
       min-height:560px;
@@ -447,12 +500,12 @@
       display:flex;
       align-items:center;
       justify-content:center;
-      border-right:1px solid var(--line-light);
+      border-right:1px solid rgba(24,52,59,.12);
       font-size:11px;
       letter-spacing:.16em;
       writing-mode:vertical-rl;
       transform:rotate(180deg);
-      color:rgba(255,255,255,.54);
+      color:#748A8F;
     }
 
     .service-code{
@@ -462,9 +515,9 @@
       font-weight:900;
     }
 
-    .geo .service-code{color:var(--acid)}
-    .seo .service-code{color:#FFD1E8}
-    .sem .service-code{color:#FFB77A}
+    .geo .service-code{color:#50745E}
+    .seo .service-code{color:#5D7C77}
+    .sem .service-code{color:#6F8068}
 
     .service-copy h3{
       margin:0;
@@ -474,7 +527,7 @@
 
     .service-copy p{
       margin:18px 0 0;
-      color:rgba(255,255,255,.84);
+      color:rgba(255,255,255,.88);
       font-size:13.5px;
       line-height:1.75;
       max-width:630px;
@@ -486,12 +539,12 @@
       grid-template-columns:1fr 1fr;
       gap:10px 24px;
       padding-top:20px;
-      border-top:1px solid rgba(255,255,255,.15);
+      border-top:1px solid rgba(24,52,59,.12);
     }
 
     .service-points span{
       font-size:10px;
-      color:rgba(255,255,255,.74);
+      color:rgba(255,255,255,.76);
     }
 
     .service-orb{
@@ -502,10 +555,10 @@
       right:-120px;
       top:50%;
       transform:translateY(-50%);
-      border:1px solid rgba(255,255,255,.13);
+      border:1px solid rgba(62,97,84,.085);
       box-shadow:
-        inset 0 0 0 70px rgba(255,255,255,.025),
-        inset 0 0 0 140px rgba(255,255,255,.018);
+        inset 0 0 0 70px rgba(91,120,99,.026),
+        inset 0 0 0 140px rgba(91,120,99,.018);
     }
 
     /* strategy */
@@ -534,7 +587,7 @@
     }
 
     .strategy-flow{
-      border-left:1px solid rgba(18,61,59,.2);
+      border-left:1px solid rgba(53,89,75,.18);
       padding-left:34px;
     }
 
@@ -554,7 +607,7 @@
       height:11px;
       border-radius:50%;
       background:var(--coral);
-      box-shadow:0 0 0 7px var(--lav);
+      box-shadow:0 0 0 7px #F2F6F2;
     }
 
     .strategy-step small{
@@ -562,7 +615,7 @@
       font-size:9px;
       letter-spacing:.15em;
       text-transform:uppercase;
-      color:#746F79;
+      color:#6B7870;
     }
 
     .strategy-step h3{
@@ -574,7 +627,7 @@
     .strategy-step p{
       margin:10px 0 0;
       max-width:640px;
-      color:#5F5A64;
+      color:#5B6861;
       font-size:13px;
       line-height:1.68;
     }
@@ -604,7 +657,7 @@
       grid-template-columns:repeat(6,minmax(0,1fr));
       border-top:1px solid var(--line);
       border-left:1px solid var(--line);
-      background:rgba(255,255,255,.24);
+      background:#FBFCF9;
     }
 
     .platform{
@@ -619,15 +672,15 @@
     }
 
     .platform:hover{
-      background:rgba(214,255,92,.52);
+      background:#E7EFE9;
     }
 
     .platform:hover small{
-      color:#50604B;
+      color:#5D6C64;
     }
 
     .platform:hover strong{
-      color:var(--petrol);
+      color:#355349;
     }
 
     .platform small{
@@ -635,7 +688,7 @@
       line-height:1.35;
       letter-spacing:.12em;
       text-transform:uppercase;
-      color:#77717B;
+      color:#6C786F;
       font-weight:650;
     }
 
@@ -643,15 +696,21 @@
       font-size:20px;
       line-height:1.15;
       letter-spacing:-.03em;
-      color:#1D1A20;
+      color:#26332D;
       font-weight:760;
     }
 
     /* outcomes */
     .outcomes{
-      background:var(--petrol-2);
+      background:#35584B;
       color:#fff;
       padding:120px 0;
+    }
+
+
+    .outcomes h2,
+    .outcome-item h3{
+      color:#FFFFFF;
     }
 
     .outcomes-grid{
@@ -683,7 +742,7 @@
     .outcome-item span{
       font-size:9px;
       letter-spacing:.14em;
-      color:#8FB2AD;
+      color:#B2C8BB;
     }
 
     .outcome-item h3{
@@ -694,7 +753,7 @@
 
     .outcome-item p{
       margin:0;
-      color:#BDD0CD;
+      color:#E0EAE4;
       font-size:11px;
       line-height:1.6;
     }
@@ -703,6 +762,12 @@
     .faq{
       padding:120px 0;
       background:var(--acid);
+    }
+
+
+    .faq h2,
+    .faq-list summary{
+      color:#304A3E;
     }
 
     .faq-grid{
@@ -720,11 +785,11 @@
     }
 
     .faq-list details{
-      border-top:1px solid rgba(18,61,59,.25);
+      border-top:1px solid rgba(53,89,75,.14);
     }
 
     .faq-list details:last-child{
-      border-bottom:1px solid rgba(18,61,59,.25);
+      border-bottom:1px solid rgba(53,89,75,.14);
     }
 
     .faq-list summary{
@@ -746,7 +811,7 @@
       content:"+";
       width:28px;
       height:28px;
-      border:1px solid rgba(18,61,59,.3);
+      border:1px solid rgba(53,89,75,.18);
       border-radius:50%;
       display:grid;
       place-items:center;
@@ -755,20 +820,20 @@
 
     .faq-list details[open] summary::after{
       transform:rotate(45deg);
-      background:var(--petrol);
+      background:#3E6154;
       color:#fff;
     }
 
     .faq-list p{
       margin:-2px 0 22px;
-      color:#35554F;
+      color:#52665B;
       font-size:12px;
       line-height:1.72;
     }
 
     /* contact */
     .contact{
-      background:var(--coral);
+      background:#5B786D;
       color:#fff;
       padding:108px 0 0;
     }
@@ -789,14 +854,14 @@
     }
 
     .contact-copy{
-      color:rgba(255,255,255,.84);
+      color:rgba(255,255,255,.88);
       font-size:14px;
       line-height:1.75;
     }
 
     .contact-grid{
       display:grid;
-      grid-template-columns:repeat(4,1fr);
+      grid-template-columns:repeat(5,1fr);
       border-top:1px solid rgba(255,255,255,.28);
       border-left:1px solid rgba(255,255,255,.28);
     }
@@ -810,7 +875,7 @@
 
     a.contact-item:hover{
       background:#fff;
-      color:var(--coral);
+      color:#6F8A6A;
     }
 
     .contact-item small{
@@ -829,7 +894,7 @@
     }
 
     footer{
-      background:var(--coral);
+      background:#5B786D;
       color:#fff;
       padding:26px 0 32px;
     }
@@ -837,10 +902,36 @@
     .footer-row{
       text-align:center;
       font-size:10px;
-      color:rgba(255,255,255,.74);
+      color:rgba(255,255,255,.76);
     }
 
     .footer-row a{color:#fff;font-weight:700}
+
+
+    /* Contrast safeguards */
+    .intro,
+    .strategy,
+    .visibility,
+    .faq{
+      color:#24322B;
+    }
+
+    .hero-aside,
+    .outcomes,
+    .contact,
+    footer{
+      color:#FFFFFF;
+    }
+
+    .hero-aside p,
+    .hero-aside span{
+      color:#EDF3EF;
+    }
+
+    .contact-item small,
+    .contact-item strong{
+      color:inherit;
+    }
 
     .reveal{
       opacity:0;
@@ -878,7 +969,7 @@
       .strategy-title{position:static}
 
       .visibility-map{grid-template-columns:repeat(3,1fr)}
-      .contact-grid{grid-template-columns:1fr 1fr}
+      .contact-grid{grid-template-columns:repeat(3,1fr)}
     }
 
     @media(max-width:760px){
@@ -954,7 +1045,7 @@
         transform:none;
         justify-content:flex-start;
         border-right:0;
-        border-bottom:1px solid var(--line-light);
+        border-bottom:1px solid rgba(36,51,43,.14);
         padding-bottom:12px;
       }
 
@@ -1294,7 +1385,7 @@
     <section class="faq" id="faq">
       <div class="wrap faq-grid">
         <div class="reveal">
-          <div class="label" style="color:#40615B">Search Intelligence</div>
+          <div class="label" style="color:#60766A">Search Intelligence</div>
           <h2>几个真正重要的问题。</h2>
         </div>
 
@@ -1349,6 +1440,11 @@
           <a class="contact-item" href="tel:+8651257828333">
             <small>Phone</small>
             <strong>+86 512-57828333</strong>
+          </a>
+
+          <a class="contact-item" href="https://wa.me/8617721028008" target="_blank" rel="noopener">
+            <small>WhatsApp</small>
+            <strong>+86 17721028008</strong>
           </a>
 
           <a class="contact-item" href="mailto:support@our.marketing">
